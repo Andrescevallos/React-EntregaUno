@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Nadvar from "./Componentes/Nadvar";
+import ItemListContainer from "./Componentes/ItemListContainer";
+
+/*
+Componente: 
+
+1) Sempre son funciones
+
+2) Siempre la primera letra va en MAYUSCULA.
+
+3) Siempre tienen un retorno(array, elemento, etc)
+
+4) Toos pueden tener una sola salida a pantalla
+*/
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+  <>
+    <Nadvar />
+    <ItemListContainer titulo="Entrega numero 1"/> 
+  </>
+  )
 }
 
 export default App;
